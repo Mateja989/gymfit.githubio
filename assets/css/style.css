@@ -1,0 +1,335 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+  transition: all .2s linear;
+}
+.fixed-top{
+ position: fixed !important;
+  z-index: 3;
+}
+.header-color{
+  background-color: #343434 !important;
+}
+.mm-z{
+  position: relative !important;
+  z-index: 0 !important;
+}
+.mm-margin{
+  margin-top: 220px;
+  margin-bottom: 250px;
+}
+.mm-margin h2{
+  font-size: 48px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  padding-top: 50px !important;
+}
+.mm-margin p,.mm-margin h2{
+  margin: 10px 10px !important;
+}
+#logo{
+  width: 30%;
+  margin-left: 25px;
+}
+.color,a:hover{
+  color: #03909A !important;
+}
+
+#logo h1{
+  font-size: 25px;
+  font-weight: bold !important;
+  letter-spacing: 2px;
+}
+#logo i{
+  font-size: 20px;
+  margin-right: 5px;
+}
+.d-flex{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.menuList {
+  list-style: none !important;
+}
+.menuList li {
+  padding-top:20px;
+  padding-bottom: 5px;
+}
+.menuList li a{
+  color:#fff;
+  font-weight: 700 !important;
+  font-size: 16px;
+  text-decoration: none;
+  transition: 0.7 ease !important;
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+.img img{
+  width: 100% !important;
+  text-align: center !important;
+  height: 300px;
+  border-radius: 50% !important;
+}
+.card{
+  border: 0px !important;
+}
+.card-body p,.srbija p{
+  font-size: 12px;
+  font-weight: bold;
+}
+.bg-cover{
+  position: relative;
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  z-index: 1;
+}
+.bg-cover::after{ 
+  content: "" !important;
+  width: 100% ;
+  height: 100%;
+  background-color: #333;
+  position: absolute;
+  top:0;
+  left: 0;
+  opacity: .7;
+  z-index: -1;
+}
+.bg-cover>*{
+  z-index: 10;
+  position: relative;
+  color:white;
+}
+.bg-cover1{
+  position: relative;
+  background: url("../img/slika.jpg");
+  z-index: 0;
+}
+.bg-cover1::after{
+  background-color: #fff;
+  opacity: 0.8;
+}
+.mm-margin button{
+  background-color: transparent !important;
+  border-color: #ffffff;
+  border: 2px solid;
+  padding: 5px 15px;
+  color: #ffffff;
+  margin-top: 40px;
+  margin-bottom: 50px !important;
+  font-size: 16px;
+  font-weight: bold;
+
+}
+.bg-cover1 h3{
+  color:#343434;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+
+}
+.programsText p{
+  padding-left: 20px;
+  padding-top:10px;
+  padding-bottom:10px;
+
+  color: #848484;
+}
+.letter{
+  font-size: 18px !important;
+}
+
+.izuzetak{
+  border-left:  10px solid #03909A ;
+  padding-left: 20px;
+  padding-top:10px;
+  padding-bottom:10px;
+  color: #000 !important;
+}
+.programsImg img{
+  width: 100%;
+  border-radius: 50% !important;
+  padding: 10px;
+}
+#stats{
+  background-color: #2E2F2F;
+  color: #fff;
+}
+.boja{
+  background-color:#343434  !important;
+  margin-bottom: 50px;
+  color: #fff;
+}
+.fa-users,.fa-calendar-alt,.dumbell{
+  font-size: 42px;
+  padding: 15px;
+  margin-top: 15px;
+}
+.boja h4{
+  font-size: 48px;
+  font-weight: bold;
+}
+.boja p{
+  letter-spacing: 2px;
+}
+.fa-map-marker{
+  color:#03909A !important;
+}
+.colorbtn{
+  color: #ffffff !important;
+  background-color: #03909A !important;
+}
+input,textarea{
+  background-color: #DFE1E1!important;
+  border: 0px !important;
+}
+.border-bottom{
+  border-bottom: 1px solid #343434 !important;
+}
+.error{
+  color: red !important;
+  letter-spacing: 2px !important;
+  background-color: red !important;
+}
+.success{
+  border: 1px solid green;
+}
+.about img{
+  width: 100% !important;
+  border-radius: 50% !important;
+}
+.mm-btn{
+  background-color: #343434 !important;
+  color: #fff !important;
+}
+
+@media(max-width:768px){
+  .mm-margin{
+    margin-top: 100px !important;
+    margin-bottom: 100px !important;
+  }
+ .mm-margin h2{
+   margin-top: 0px !important;
+   font-size: 36px;
+  }
+  .hamburger{
+    display: block;
+    margin-top: 10px;
+  }
+  .mm-margin button{
+    margin-top: 10px !important;
+    margin-bottom: 0px !important;
+  }
+  .bg-cover h3{
+    padding-top: 20px !important;
+    margin-bottom: 10px;
+    font-size: 24px !important;
+  }
+  .card-body{
+    padding: 0px !important;
+  }
+  #trainingForm{
+    margin-top: 0px !important;
+  }
+  .me{
+    text-align: center !important;
+  }
+  #nav{
+    width: 1% !important;
+  }
+  #logo {
+    width: 50%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 0px;
+  }
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(25deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-25deg);
+  }
+  .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #343434;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item{
+    margin: 16px 0px;
+  }
+
+  .nav-menu.active{
+    left: 0;
+  }
+}
+@media(max-width:330px){
+ #logo{
+   width: 60%;
+ }
+}
+
+footer{
+  background-color: #343434 ;
+  height: 300px;
+}
+footer h3{
+  color: #fff !important;
+  letter-spacing: 5px;
+  font-size: 24px;
+}
+footer i{
+  margin-left: 5px;
+  font-size: 34px;
+}
+
+.gallery{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+.gallery a{
+  height: 30%;
+  width: 16.6%;
+  margin-left: 0px;
+  margin-right: 0px;
+  overflow: hidden;
+}
+.gallery a img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.gallery a img:hover{
+  transform:scale(1.4);
+}
